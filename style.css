@@ -1,0 +1,162 @@
+/* https://fonts.google.com/specimen/Roboto+Slab */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+/* -- print setup -- */
+@page {
+	margin: 0;
+	size: A4 landscape;
+}
+
+/* -- reset -- */
+* {
+	box-sizing: border-box;
+}
+
+code,h1,li,ol,p,pre,span,table,td,th,ul {
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #fff;
+	color: #000;
+	font: normal 62.5%/1 'Roboto Slab',serif;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+/* -- slide container -- */
+.slide {
+	height: 100%;
+	page-break-after: always;
+	position: relative;
+}
+
+/* -- slide - content -- */
+.slide-content {
+	height: 80%; /* height + (2 * top) = 100% */
+	left: 10%;
+	position: absolute;
+	top: 10%;
+	width: 80%; /* width + (2 * left) = 100% */
+}
+
+.slide-content > h1 {
+	font-size: 6em;
+	margin-bottom: 30px;
+}
+
+/* -- slide - content - list/paragraph/table -- */
+.slide-content ol,
+.slide-content ul {
+	margin-bottom: 35px;
+	margin-left: 30px;
+}
+
+.slide-content ol ol,
+.slide-content ol ul,
+.slide-content ul ol,
+.slide-content ul ul {
+	margin-bottom: 0;
+}
+
+.slide-content > table {
+	border-collapse: collapse;
+}
+
+.slide-content > table td,
+.slide-content > table th {
+	border: 1px solid #777;
+	padding: 10px;
+}
+
+.slide-content ol li,
+.slide-content ul li,
+.slide-content > p,
+.slide-content > pre,
+.slide-content > table td,
+.slide-content > table th {
+	font-size: 3.2em;
+	line-height: 1.5;
+	margin-bottom: 5px;
+}
+
+.slide-content > p {
+	margin-bottom: 10px;
+}
+
+.slide-content li li {
+	font-size: 100%;
+}
+
+/* -- slide - content - image -- */
+.slide-content > img {
+	display: block;
+	height: auto;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+}
+
+/* -- slide - content - code/pre -- */
+.slide-content code,
+.slide-content > pre {
+	font-family: monospace;
+}
+
+.slide-content > pre {
+	margin: 10px 0;
+}
+
+/* -- slide - content - faux link/highlight -- */
+.slide-content .faux-link {
+	color: #00f;
+	text-decoration: underline;
+}
+
+.slide-content .highlight {
+	background-color: #ffb8b8;
+}
+
+/* -- slide - content - todo -- */
+.slide-content .todo {
+	color: #f00;
+}
+
+/* -- slide - footer -- */
+.slide-footer {
+	border-top: 2px solid #000;
+	bottom: 20px;
+	left: 0;
+	margin: 0 20px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+}
+
+.slide-footer > p {
+	font-size: 1.6em;
+	margin: 20px 20px 0;
+	white-space: nowrap;
+}
+
+.slide-footer > p.left,
+.slide-footer > p.right {
+	position: absolute;
+	top: 0;
+}
+
+.slide-footer > p.left {
+	left: 0;
+}
+
+.slide-footer > p.right {
+	right: 0;
+}
