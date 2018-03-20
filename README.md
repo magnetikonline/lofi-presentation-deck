@@ -24,7 +24,7 @@ Put together after presenting an [ignite talk](https://en.wikipedia.org/wiki/Ign
 ![Homer and Flanders](https://media.giphy.com/media/l2JefZLtstHfXIbh6/giphy.gif)
 
 ## Example
-View here: https://magnetikonline.github.io/lofipresentationdeck/
+View here: https://magnetikonline.github.io/lofi-presentation-deck/
 
 ## Credits
 Font is [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab) from [Christian Robertson](https://twitter.com/cr64).
